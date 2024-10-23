@@ -103,7 +103,7 @@ const Home = () => {
       </div>
       <Cta content={homeData.ctas[1]} />
       <div><section class="bg-zinc-50 overflow-hidden">
-  <div class="max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto py-12 lg:py-24 space-y-24 h-svh flex flex-col justify-center">
+  <div class="max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto py-12 lg:py-24 space-y-24 h-full flex flex-col justify-center">
     <div class="flex flex-col sm:flex-row mx-auto space-x-4">
       <a href="#" aria-label="Image 1 Description">
         <img src={K4}
@@ -125,40 +125,6 @@ const Home = () => {
              class="rounded-xl -rotate-12 hover:rotate-0 duration-500 hover:-translate-y-12 h-64 w-full object-cover hover:scale-150 transform origin-bottom" 
              alt="Description of the fourth image"/> 
       </a>
-    </div> 
-
-    <div class="pointer-events-none fixed inset-x-0 bottom-0 sm:flex sm:justify-center sm:px-6 sm:pb-5 lg:px-8">
-      <div class="pointer-events-auto flex w-full max-w-md divide-x divide-neutral-200 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-        <div class="flex w-0 flex-1 items-center p-4">
-          <div class="w-full">
-            <p class="text-sm font-medium text-neutral-900">Tutorial</p>
-            <p class="mt-1 text-sm text-neutral-500">
-              How to create animated image cards with Tailwind CSS and Astrojs
-            </p>
-            <p class="mt-2 text-xs text-orange-500 underline"> 
-              <a href="https://lexingtonthemes.com" target="_blank">by © Lexington Themes</a>
-            </p>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="flex flex-col divide-y divide-neutral-200">
-            <div class="flex h-0 flex-1"> 
-              <a target="_blank" href="https://lexingtonthemes.com/tutorials/how-to-create-animated-images-with-tailwind-css-and-astro-js/" 
-                 class="flex w-full items-center justify-center rounded-none rounded-tr-lg border border-transparent px-4 py-3 text-sm font-medium text-orange-600 hover:text-orange-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-orange-500" 
-                 aria-label="Read the tutorial on creating animated images">
-                 Tutorial
-              </a> 
-            </div>
-            <div class="flex h-0 flex-1"> 
-              <a target="_blank" href="https://github.com/UnwrappedDesign/lexington-tutorials/tree/main/src/pages/simplified-cards" 
-                 class="flex w-full items-center justify-center rounded-none rounded-br-lg border border-transparent px-4 py-3 text-sm font-medium text-neutral-700 hover:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-orange-500" 
-                 aria-label="Get the code for the tutorial">
-                 Get the code
-              </a> 
-            </div>
-          </div>
-        </div>
-      </div>
     </div> 
   </div>
 </section>

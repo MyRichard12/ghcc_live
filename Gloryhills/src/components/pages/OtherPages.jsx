@@ -13,7 +13,7 @@ import FooterSection from "../../templates/FooterSection";
 import K1 from "/src/images/s3.jpg";
 import K2 from "/src/images/s2.jpg";
 import K3 from "/src/images/s1.jpg";
-import K4 from "/src/images/s4.jpg";
+import K4 from "/src/images/s1.png";
 
 export const query = graphql`
   query ($slug: String!) {
@@ -272,7 +272,7 @@ const OtherPages = ({ data }) => {
       }}>
       <div className="absolute top-0 mt-20 right-0 bottom-0 left-0 bg-gradient-to-b from-transparent to-gray-900"></div>
       <div className="absolute top-0 right-0 left-0 mx-5 mt-2 flex justify-between items-center">
-        <a href="https://www.youtube.com/watch?v=0lVoeZf9FFQ&t=3776s"
+        <a href="https://www.youtube.com/watch?v=xTEio7mLZ8c"
           className="text-xs bg-indigo-600 text-white px-5 py-2 uppercase hover:bg-white hover:text-indigo-600 transition ease-in-out duration-500 font-bold">Listen</a>
         <div className="text-white font-regular flex flex-col justify-start">
           <span className="text-3xl leading-0 font-semibold">25</span>
@@ -280,7 +280,7 @@ const OtherPages = ({ data }) => {
         </div>
       </div>
       <main className="p-5 z-10">
-        <a href="https://www.youtube.com/watch?v=0lVoeZf9FFQ&t=3776s"
+        <a href="https://www.youtube.com/watch?v=xTEio7mLZ8c"
           className="text-md tracking-tight font-medium leading-7 font-regular text-white hover:underline">Listen
         </a>
       </main>
