@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+/* Header styles */
+.header {
+  padding: 0px;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4d749d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Form style
+
+/* Add more custom styles as needed */

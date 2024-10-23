@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto Flex:wght@200;400;500;600;700");
+@import url("https://api.fontshare.com/css?f[]=roboto flex@200,400,500,600,700&display=swap");
+
+p,
+ol,
+ul {
+  margin: 0px;
+}
+
+button {
+  padding: 0px;
+}
+
+ol,
+ul {
+  padding-inline-start: 1.5em;
+}
+
+input {
+  background-image: none;
+  background-color: transparent;
+}
+.font-roboto_flex {
+  font-family: "Roboto Flex";
+}
+
+p,
+ol,
+ul {
+  margin: 0px;
+}
+
+button {
+  padding: 0px;
+}
+
+ol,
+ul {
+  padding-inline-start: 1.5em;
+}
+
+input {
+  background-image: none;
+  background-color: transparent;
+}
+
+.bg-t-bg-union-tvillage-outreaches-know-more-about-our-village-outreaches {
+  background-image: url("/images/ttline.svg");
+}

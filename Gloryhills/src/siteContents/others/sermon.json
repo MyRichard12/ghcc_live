@@ -1,0 +1,154 @@
+{
+  "slug": "sermon",
+  "heroHeading": "Sermons",
+  "heroDescription": "We will help to develop every smallest thing into a big one for your company We will help to develop every smallest thing into a big one for your company We will help to develop every smallest thing into a big one for your company",
+  "hangers": [
+    {
+      "title": "Popular Sermons",
+      "description": "Listen our popular sermons"
+    },
+    {
+      "title": "Other Resources",
+      "description": "Other edifying resources"
+    }
+  ],
+  "sermon_grid": [
+    {
+      "image": "../images/pastor_tunde.jpg",
+      "content": [
+        {
+          "title": "Teenagers Conference",
+          "subTitle": "Lagos, Nigeria",
+          "body": [
+            "Therefore, go and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit.",
+            "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam id mauris in ut. Erat amet in arcu placerat morbi nulla et tempor. Hac tristique ultrices gravida aliquam. Enim dolor volutpat adipiscing pulvinar dictum enim elementum. Malesuada eu imperdiet libero id egestas.",
+            "morbi purus non sed amet scelerisque eu vestibulum. Faucibus eget mi at eu. Ac vulputate in id volutpat nunc felis. Eros euismod venenatis et proin eu. In massa a nascetur odio mauris. Nun"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "../images/pastor_tunde.jpg",
+      "content": [
+        {
+          "title": "Teenagers Conference",
+          "subTitle": "Lagos, Nigeria",
+          "body": [
+            "Therefore, go and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit.",
+            "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam id mauris in ut. Erat amet in arcu placerat morbi nulla et tempor. Hac tristique ultrices gravida aliquam. Enim dolor volutpat adipiscing pulvinar dictum enim elementum. Malesuada eu imperdiet libero id egestas.",
+            "morbi purus non sed amet scelerisque eu vestibulum. Faucibus eget mi at eu. Ac vulputate in id volutpat nunc felis. Eros euismod venenatis et proin eu. In massa a nascetur odio mauris. Nun"
+          ]
+        }
+      ]
+    }
+  ],
+  "events_thumbnail": [
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    },
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    },
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    },
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    },
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    },
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    },
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    },
+    {
+      "image": "../images/testifier.jpg",
+      "quote": "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam..",
+      "location": "4, Ogun River, Magodo, Ogun State",
+      "title": "Teenagers Conference"
+    }
+  ],
+
+  "outreaches": [
+    {
+      "image": "../images/pastor_tunde.jpg",
+      "content": [
+        {
+          "title": "Okitipupa Outreach",
+          "subTitle": "Ondo, Nigeria",
+          "body": [
+            "Therefore, go and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit.",
+            "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam id mauris in ut. Erat amet in arcu placerat morbi nulla et tempor. Hac tristique ultrices gravida aliquam. Enim dolor volutpat adipiscing pulvinar dictum enim elementum. Malesuada eu imperdiet libero id egestas.",
+            "morbi purus non sed amet scelerisque eu vestibulum. Faucibus eget mi at eu. Ac vulputate in id volutpat nunc felis. Eros euismod venenatis et proin eu. In massa a nascetur odio mauris. Nun"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "../images/pastor_tunde.jpg",
+      "content": [
+        {
+          "title": "Okitipupa Outreach",
+          "subTitle": "Ondo, Nigeria",
+          "body": [
+            "Therefore, go and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit.",
+            "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam id mauris in ut. Erat amet in arcu placerat morbi nulla et tempor. Hac tristique ultrices gravida aliquam. Enim dolor volutpat adipiscing pulvinar dictum enim elementum. Malesuada eu imperdiet libero id egestas.",
+            "morbi purus non sed amet scelerisque eu vestibulum. Faucibus eget mi at eu. Ac vulputate in id volutpat nunc felis. Eros euismod venenatis et proin eu. In massa a nascetur odio mauris. Nun"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "../images/pastor_tunde.jpg",
+      "content": [
+        {
+          "title": "Lagos State University",
+          "subTitle": "Lagos, Nigeria",
+          "body": [
+            "Therefore, go and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit.",
+            "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam id mauris in ut. Erat amet in arcu placerat morbi nulla et tempor. Hac tristique ultrices gravida aliquam. Enim dolor volutpat adipiscing pulvinar dictum enim elementum. Malesuada eu imperdiet libero id egestas.",
+            "morbi purus non sed amet scelerisque eu vestibulum. Faucibus eget mi at eu. Ac vulputate in id volutpat nunc felis. Eros euismod venenatis et proin eu. In massa a nascetur odio mauris. Nun"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "../images/pastor_tunde.jpg",
+      "content": [
+        {
+          "title": "Lagos State University",
+          "subTitle": "Lagos, Nigeria",
+          "body": [
+            "Therefore, go and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit.",
+            "Lorem ipsum dolor sit amet consectetur. In interdum quisque ipsum adipiscing. Tortor posuere amet nisl eleifend aliquam id mauris in ut. Erat amet in arcu placerat morbi nulla et tempor. Hac tristique ultrices gravida aliquam. Enim dolor volutpat adipiscing pulvinar dictum enim elementum. Malesuada eu imperdiet libero id egestas.",
+            "morbi purus non sed amet scelerisque eu vestibulum. Faucibus eget mi at eu. Ac vulputate in id volutpat nunc felis. Eros euismod venenatis et proin eu. In massa a nascetur odio mauris. Nun"
+          ]
+        }
+      ]
+    }
+  ]
+}
