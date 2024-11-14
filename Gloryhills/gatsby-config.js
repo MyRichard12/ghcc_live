@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata : {
         title: `Glory Hills Community Church`,
         description: `Official GHCC Website`,
-        siteUrl: `https://ghcc.com`
+        siteUrl: `https://ghccglobal.org`
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -13,7 +13,7 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                path: "./src/siteContents/"
+                path: `${__dirname}/src/siteContents/`
             }
         }
     ]
