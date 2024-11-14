@@ -76,7 +76,7 @@ const Home = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl mx-auto bg-slate-100 roboto flex flex-col w-fit">
+    <div className="bg-slate-100 roboto flex flex-col w-full">
       <SiteMeta />
       <HeroSection
         variant={`main`}
