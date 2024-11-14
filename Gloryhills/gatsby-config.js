@@ -13,6 +13,7 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: `otherPages`,
                 path: `${__dirname}/src/siteContents/`
             }
         }
