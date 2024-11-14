@@ -53,7 +53,7 @@
   },
   "lead_pastor": {
     "title": "Senior Pastor",
-    "image_link": "../images/pastor_tobi.jpg",
+    "image_link": "./../images/pastor_tobi.jpg",
     "content": [
       {
         "title": "Pastor Tobi Omojowo",
