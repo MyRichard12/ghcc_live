@@ -10,12 +10,29 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-transformer-json`,
+        `gatsby-plugin-mdx`,
+        `gatsby-plugin-netlify-cms`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `otherPages`,
                 path: `${__dirname}/src/siteContents/`
             }
-        }
+        },
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options:{
+              extensions: [`.md`, `.mdx`],
+              name: `blog`,
+              path: `./src/datalogs/events/`,
+              gatsbyRemarkPlugins: [{
+                resolve: `gatsby-remark-images`,
+                options: {
+                  maxWidth: 1200,
+                }
+              }
+              ]
+            }
+          }
     ]
 }
