@@ -2,28 +2,27 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "src/datalogs/images"
-public_folder: "/datalogs/images"
+media_folder: "gloryhills/src/datalogs/images"
+public_folder: "/gloryhills/datalogs/images"
 
 collections:
   - name: "events"
     label: "Event Updates"
-    folder: "src/datalogs/events"
+    folder: "gloryhills/src/datalogs/events"
     create: true
     slug: "{{slug}}"
     identifier_field: "title"
     summary: "{{title}} - {{date}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
 
-  - name: "sermons"
-    label: "Sermon Updates"
-    folder: "src/datalogs/sermons"
+  - name: "youtube_sermons"
+    label: "Youtube Sermons"
+    folder: "gloryhills/src/datalogs/y_sermons"
     create: true
     slug: "{{slug}}"
     identifier_field: "title"
@@ -33,3 +32,18 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "Youtube Link", name: "externalLink", widget: "text" }
+  
+  - name: "spotify_sermons"
+    label: "Spotify Sermons"
+    folder: "gloryhills/src/datalogs/s_sermons"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    summary: "{{title}} - {{date}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "Spotify Link", name: "externalLink", widget: "text" }
