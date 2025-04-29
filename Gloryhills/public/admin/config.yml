@@ -15,7 +15,21 @@ collections:
     summary: "{{title}} - {{date}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+
+  - name: "sermons"
+    label: "Sermon Updates"
+    folder: "src/datalogs/sermons"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    summary: "{{title}} - {{date}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
