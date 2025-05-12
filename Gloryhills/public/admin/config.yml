@@ -2,13 +2,13 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "gloryhills/src/datalogs/images"
-public_folder: "/gloryhills/datalogs/images"
+media_folder: "Gloryhills/src/datalogs/images"
+public_folder: "/Gloryhills/datalogs/images"
 
 collections:
   - name: "events"
     label: "Event Updates"
-    folder: "gloryhills/src/datalogs/events"
+    folder: "Gloryhills/src/datalogs/events"
     create: true
     slug: "{{slug}}"
     identifier_field: "title"
@@ -22,7 +22,7 @@ collections:
 
   - name: "youtube_sermons"
     label: "Youtube Sermons"
-    folder: "gloryhills/src/datalogs/y_sermons"
+    folder: "Gloryhills/src/datalogs/y_sermons"
     create: true
     slug: "{{slug}}"
     identifier_field: "title"
@@ -36,7 +36,7 @@ collections:
   
   - name: "spotify_sermons"
     label: "Spotify Sermons"
-    folder: "gloryhills/src/datalogs/s_sermons"
+    folder: "Gloryhills/src/datalogs/s_sermons"
     create: true
     slug: "{{slug}}"
     identifier_field: "title"
