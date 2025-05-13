@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+publish_mode: editorial_workflow
+site_url: https://ghccglobal.org
+logo_url: https://ghccglobal.org/static/church-svg-57b3a1c59fba7c068b98dfb882b2c3af.svg
+
 media_folder: "Gloryhills/src/datalogs/images"
 public_folder: "/Gloryhills/datalogs/images"
 
@@ -9,6 +13,7 @@ collections:
   - name: "events"
     label: "Event Updates"
     folder: "Gloryhills/src/datalogs/events"
+    delete: true
     create: true
     slug: "{{slug}}"
     identifier_field: "title"
@@ -17,6 +22,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["Upcoming Events", "Events Calendar", "University Outreaches"]}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
 
@@ -24,6 +30,7 @@ collections:
     label: "Youtube Sermons"
     folder: "Gloryhills/src/datalogs/y_sermons"
     create: true
+    delete: true
     slug: "{{slug}}"
     identifier_field: "title"
     summary: "{{title}} - {{date}}"
@@ -38,6 +45,7 @@ collections:
     label: "Spotify Sermons"
     folder: "Gloryhills/src/datalogs/s_sermons"
     create: true
+    delete: true
     slug: "{{slug}}"
     identifier_field: "title"
     summary: "{{title}} - {{date}}"

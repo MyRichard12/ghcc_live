@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+public/static
+public/page-data
+public/~partytown
 
 # Editor directories and files
 .vscode/*

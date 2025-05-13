@@ -9,6 +9,7 @@ module.exports = {
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        `gatsby-transformer-remark`,
         `gatsby-transformer-json`,
         `gatsby-plugin-mdx`,
         `gatsby-plugin-netlify-cms`,
@@ -20,11 +21,18 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `tenants`,
+                path: `${__dirname}/src/datalogs/`
+            }
+        },
+        {
             resolve: `gatsby-plugin-mdx`,
             options:{
               extensions: [`.md`, `.mdx`],
               name: `blog`,
-              path: `./src/datalogs/events/`,
+              path: `${__dirname}/src/datalogs/events/`,
               gatsbyRemarkPlugins: [{
                 resolve: `gatsby-remark-images`,
                 options: {

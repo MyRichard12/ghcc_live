@@ -131,6 +131,10 @@ export const query = graphql`
   }
 `;
 
+
+
+// next we start inserting content agnostic files
+
 const OtherPages = ({ data }) => {
   const pageData = data.othersJson;
 
