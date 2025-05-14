@@ -30,7 +30,7 @@ import LocationMarker from "../assets/LocationMarker";
 
 export const SuperGrid = ({ setup }) => {
 
-  let staticImage = setup.imageData
+  let staticImage = `../../../..+${setup.imageData}`
 
   return (
     <section
@@ -41,7 +41,7 @@ export const SuperGrid = ({ setup }) => {
       <div className={`${!setup.hasImage && `hidden lg:p-20 bg-neutral-800` || `lg:px-10` } lg:flex z-[2] items-center justify-center p-2 w-full lg:w-1/3`}>
        {/* grid image flows here */}
         {setup?.hasImage === true && 
-        (setup?.hasImage === true && setup?.staticImage === true) ? <StaticImage src={'../../../../'+staticImage} alt={`static_image`} /> : <GatsbyImage image={setup.imageData} alt={setup.indentTitle} />}
+        (setup?.hasImage === true && setup?.staticImage === true) ? <StaticImage src={staticImage} alt={`static_image`} /> : <GatsbyImage image={setup.imageData} alt={setup.indentTitle} />}
         {setup?.hasImage === false && setup?.align === "left" && (
           <LeftHanger text={setup?.indentTitle} />
         )}
