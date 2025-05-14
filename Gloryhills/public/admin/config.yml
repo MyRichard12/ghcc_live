@@ -7,7 +7,7 @@ site_url: https://ghccglobal.org
 logo_url: https://ghccglobal.org/static/church-svg-57b3a1c59fba7c068b98dfb882b2c3af.svg
 
 media_folder: "Gloryhills/src/datalogs/images"
-public_folder: "/Gloryhills/datalogs/images"
+public_folder: "/Gloryhills/src/datalogs/images"
 
 collections:
   - name: "events"

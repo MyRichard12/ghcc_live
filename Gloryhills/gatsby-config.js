@@ -23,8 +23,15 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                name: `tenants`,
+                name: `images`,
                 path: `${__dirname}/src/datalogs/`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/datalogs/images/`
             }
         },
         {

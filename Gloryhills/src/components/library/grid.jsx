@@ -9,7 +9,7 @@ import Purp from "../../images/purp.webp";
 import MissionVisionSeparator from "../../components/assets/MissionVisionSeparator";
 import { LeftHanger, RightHanger } from "./hanger";
 import { AddMore, Button } from "./button";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import LocationMarker from "../assets/LocationMarker";
 
 /**
@@ -30,6 +30,8 @@ import LocationMarker from "../assets/LocationMarker";
 
 export const SuperGrid = ({ setup }) => {
 
+  let staticImage = setup.imageData
+
   return (
     <section
       className={`z-0 ${setup?.align == "left" && `flex flex-wrap`} ${
@@ -39,7 +41,7 @@ export const SuperGrid = ({ setup }) => {
       <div className={`${!setup.hasImage && `hidden lg:p-20 bg-neutral-800` || `lg:px-10` } lg:flex z-[2] items-center justify-center p-2 w-full lg:w-1/3`}>
        {/* grid image flows here */}
         {setup?.hasImage === true && 
-        <GatsbyImage image={setup.imageData} alt={setup.indentTitle} />}
+        (setup?.hasImage === true && setup?.staticImage === true) ? <StaticImage src={'../../../../'+staticImage} alt={`static_image`} /> : <GatsbyImage image={setup.imageData} alt={setup.indentTitle} />}
         {setup?.hasImage === false && setup?.align === "left" && (
           <LeftHanger text={setup?.indentTitle} />
         )}
