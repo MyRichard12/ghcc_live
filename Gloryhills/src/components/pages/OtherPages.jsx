@@ -131,7 +131,7 @@ export const query = graphql`
   }
 `;
 
-// next we start inserting content agnostic files
+// next we start inserting content agnostic files and queries
 
 
 const OtherPages = ({ data }) => {
