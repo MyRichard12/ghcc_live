@@ -19,7 +19,7 @@ collections:
     identifier_field: "title"
     summary: "{{title}} - {{date}}"
     fields:
-      - { label: "Query", name: "title", widget: "select", options: ["Events"], default: ["Events"] }
+      - { label: "Query", name: "query", widget: "select", options: ["Events"], default: ["Events"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
@@ -36,7 +36,7 @@ collections:
     identifier_field: "title"
     summary: "{{title}} - {{date}}"
     fields:
-      - { label: "Query", name: "title", widget: "select", options: ["youtube_sermon"], default: ["youtube_sermon"] }
+      - { label: "Query", name: "query", widget: "select", options: ["youtube_sermon"], default: ["youtube_sermon"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
@@ -52,7 +52,7 @@ collections:
     identifier_field: "title"
     summary: "{{title}} - {{date}}"
     fields:
-      - { label: "Query", name: "title", widget: "select", options: ["spotify_sermon"], default: ["spotify_sermon"] }
+      - { label: "Query", name: "query", widget: "select", options: ["spotify_sermon"], default: ["spotify_sermon"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
