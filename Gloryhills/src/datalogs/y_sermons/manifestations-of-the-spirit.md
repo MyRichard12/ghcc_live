@@ -1,4 +1,5 @@
 ---
+query: youtube_sermon
 title: Manifestations of the Spirit
 date: 2025-05-14T10:42:28.028Z
 description: Sample definition of content
