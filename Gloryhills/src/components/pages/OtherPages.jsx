@@ -58,8 +58,9 @@ const OtherPages = ({ data }) => {
 
   let pseudoEventMdx = data.allMdx.nodes.map((mdxData, index) => {
     // declare query constants
-    const { query, category } = mdxData.frontmatter;
+    const { query, category, title } = mdxData.frontmatter;
 
+    console.log(mdxData.body)
     return {
       componentData: {
         hasImage: mdxData.frontmatter.featuredImage != null,
@@ -67,14 +68,23 @@ const OtherPages = ({ data }) => {
         imageData: mdxData.frontmatter.featuredImage,
         indentTitle: null,
         align: index % 2 == 0 ? "left" : "right",
-        content: [mdxData?.body],
+        content: [
+          {
+            title: title,
+            subTitle: mdxData.frontmatter.location,
+            // split the body into \n\n to log the paragraphs correctly
+            body:  mdxData?.body.split('\n\n').map((par, ind) => {
+              return par
+            }),
+          },
+        ],
       },
       query,
       category,
     };
   });
 
-  console.log(pseudoEventMdx)
+  console.log(pseudoEventMdx);
 
   let events_grid1 = {
     hasImage: true,
