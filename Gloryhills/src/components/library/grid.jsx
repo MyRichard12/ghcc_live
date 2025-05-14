@@ -30,7 +30,7 @@ import LocationMarker from "../assets/LocationMarker";
 
 export const SuperGrid = ({ setup }) => {
 
-  let staticImage = `../../../..${setup.imageData}`
+  let staticImage = `${setup.imageData}`
 
   return (
     <section
