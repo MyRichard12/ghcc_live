@@ -1,8 +1,9 @@
 ---
 query: Events
-title: Making of the Sons of God
+title: Campus Fire Conference
 date: 2025-05-13T11:35:11.719Z
 description: A taglined heading description
+location: Akungba, Ondo State
 category: Upcoming Events
 featuredImage: /Gloryhills/datalogs/images/grocery-1232944.jpg
 ---
