@@ -22,7 +22,7 @@ collections:
       - { label: "Query", name: "query", widget: "select", options: ["Events"], default: ["Events"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Location", name: "location", widget: "text" }
+      - { label: "Location", name: "location", widget: "string" }
       - { label: "Category", name: "category", widget: "select", options: ["Upcoming Events", "Events Calendar", "University Outreaches"]}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
