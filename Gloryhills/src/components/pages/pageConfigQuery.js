@@ -125,6 +125,7 @@ export const CmsDataQuery = graphql`
         location
         query
         title
+        link
       }
       body
     }

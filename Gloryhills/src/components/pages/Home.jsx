@@ -11,7 +11,6 @@ import K3 from "/src/images/k1.jpg";
 import K4 from "/src/images/k4.jpg";
 import { SiteMeta } from "../General";
 
-
 let homeHighlight = {
   variant: "highlight",
 };
@@ -55,10 +54,44 @@ const Home = () => {
           }
         }
       }
+        allMdx {
+      nodes {
+        frontmatter {
+        category
+        date
+        description
+        externalLink
+        featuredImage
+        location
+        query
+        title
+        link
+      }
+      body
+      }
+    }  
     }
   `);
 
+
   let homeData = context.homeJson;
+
+  let auxQueries = context.allMdx;
+
+
+  let pseudoHomeHighlight = auxQueries.nodes.map((mdxData, index) => {
+      const {link, title, featuredImage, category, location, query} = mdxData.frontmatter
+
+      return {
+        category,
+        content: [{
+          image: featuredImage,
+          title,
+          location,
+          link
+        }]
+      }
+  });
 
   let gridOne = {
     hasImage: false,
@@ -91,7 +124,18 @@ const Home = () => {
       <TopHanger content={homeData.hangers[0]} />
       
       {/* happening next events */}
-      <ImageGridSample setup={homeHighlight} />
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 md:px-20 px-4">
+        
+       {pseudoHomeHighlight
+  .filter(logic => logic.category === "Happening Next")
+  .map(logic => (
+    <ImageGridSample
+      key={logic.id}
+      setup={{ variant: "highlight", content: logic.content }}
+    />
+  ))}
+ 
+      </div>
       {/* appendix buttons */}
       <div className="w-full flex justify-center py-10">
         <Button variant={`others`} text={`Events Calendar`} href="/event"/>

@@ -368,6 +368,8 @@ const OtherPages = ({ data }) => {
         })}
 
       <TopHanger content={pageData.hangers[1]} />
+      {/* this is like the next-step category after the recent sermons */}
+
       {slug === "about-us" && (
         <div className="lg:px-36 px-10 py-2 text-gray-800">
           {pageData.leadership.sub_title}

@@ -10,8 +10,8 @@ export const TopHanger = ({ content }) => {
   return (
     <div className="font-roboto_flex flex w-full flex-col gap-y-9 pb-11 text-center mx-auto px-20 pt-16 tracking-wider">
       <div className="relative z-0 flex flex-col items-center gap-y-1.5 pb-3 text-center">
-        <Ttline className="absolute inset-y-0 z-0" />
-        <div className="z-[1] self-stretch text-base md:text-[32px] font-semibold leading-[normal] tracking-[0px]">
+        <Ttline className="absolute inset-y-0 z-0 -top-2" />
+        <div className="z-[1] self-stretch text-base md:text-[25px] font-semibold leading-[normal] tracking-[0px]">
           {content && content?.title}
         </div>
         <div className="z-[2] flex items-center justify-center pl-px">
