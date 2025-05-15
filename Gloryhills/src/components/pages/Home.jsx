@@ -89,6 +89,8 @@ const Home = () => {
       <Cta content={homeData?.ctas?.length > 0 && homeData.ctas[0]} />
       <SuperGrid setup={gridOne} />
       <TopHanger content={homeData.hangers[0]} />
+      
+      {/* happening next events */}
       <ImageGridSample setup={homeHighlight} />
       {/* appendix buttons */}
       <div className="w-full flex justify-center py-10">
