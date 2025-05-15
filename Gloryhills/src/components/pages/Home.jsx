@@ -60,6 +60,7 @@ const Home = () => {
         category
         date
         description
+        preacher
         externalLink
         featuredImage
         location
@@ -108,6 +109,27 @@ const Home = () => {
     content: homeData.content_grid_1.content,
   };
 
+  let pseudoLatestSermonGrid = auxQueries.nodes.filter(mdx => mdx.frontmatter.query === 'spotify_sermon').map((mdxData, index) => {
+
+    const {title, preacher, description} = mdxData.frontmatter
+
+    if(index === 0){
+
+      return {
+        hasImage: false,
+        hasMore: false,
+        indentTitle: "Latest Sermon",
+        align: "right",
+        content: [{
+          title,
+          subTitle: preacher,
+          body: [description]
+        }]
+      }
+
+    }
+  })
+
   return (
     <div className="bg-slate-100 roboto flex flex-col w-full">
       <SiteMeta />
@@ -141,7 +163,12 @@ const Home = () => {
         <Button variant={`others`} text={`Events Calendar`} href="/event"/>
       </div>
       {/* <MissionSection /> */}
-      <SuperGrid setup={gridTwo} />
+     
+     {/* the latest sermon section */}
+      {/* <SuperGrid setup={gridTwo} /> */}
+      <SuperGrid setup={pseudoLatestSermonGrid[0]} />
+
+
       <TopHanger content={homeData.hangers[1]} />
       <ImageGridSample setup={homeResource} />
       <div className="w-full flex justify-center py-10">

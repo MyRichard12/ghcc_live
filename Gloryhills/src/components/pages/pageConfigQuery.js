@@ -118,7 +118,7 @@ export const CmsDataQuery = graphql`
     fragment CmsDataQuery on Mdx {
       frontmatter {
         category
-        date
+        date(formatString: "DD MMM")
         description
         externalLink
         featuredImage
