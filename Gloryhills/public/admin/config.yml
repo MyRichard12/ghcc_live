@@ -26,6 +26,23 @@ collections:
       - { label: "Category", name: "category", widget: "select", options: ["Upcoming Events", "Events Calendar", "University Outreaches"]}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "featuredImage", widget: "image" }
+  
+  
+  - name: "coming_next"
+    label: "Coming Next"
+    folder: "Gloryhills/src/datalogs/coming_next"
+    delete: true
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    summary: "{{title}} - {{date}}"
+    fields:
+      - { label: "Query", name: "query", widget: "select", options: ["Events"], default: ["Events"] }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
 
   - name: "youtube_sermons"
     label: "Youtube Sermons"

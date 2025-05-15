@@ -60,7 +60,6 @@ const OtherPages = ({ data }) => {
     // declare query constants
     const { query, category, title } = mdxData.frontmatter;
 
-    console.log(mdxData.body)
     return {
       componentData: {
         hasImage: mdxData.frontmatter.featuredImage != null,
@@ -84,7 +83,6 @@ const OtherPages = ({ data }) => {
     };
   });
 
-  console.log(pseudoEventMdx);
 
   let events_grid1 = {
     hasImage: true,
@@ -189,6 +187,26 @@ const OtherPages = ({ data }) => {
     variant: "events",
     images: pageData?.events_thumbnail,
   };
+
+  let pseudoEventsThumbnail = data.allMdx.nodes.map((mdxData, index) => {
+
+    const {query, category, title, featuredImage, location} = mdxData.frontmatter
+
+    return {
+      query,
+      category,
+      images: [
+        {
+          staticImage: true,
+          imageData: featuredImage,
+          title: title,
+          location,
+          quote: mdxData.body
+        }
+      ]
+    }
+
+  })
 
   return (
     <div className="max-w-screen-3xl mx-auto bg-slate-100 roboto flex flex-col w-fit">
@@ -357,20 +375,36 @@ const OtherPages = ({ data }) => {
       )}
       {slug === "about-us" && <ImageGrid setup={leadershipGrid} />}
 
-      {slug === "event" && (
-        <ImageGrid setup={eventsThumbnail} className src="pb-10" />
-      )}
+      {/* rewrite the eventscalendar here */}
+      {slug === "event" &&  <div className="w-full grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:px-20 px-4">
+        {pseudoEventsThumbnail.map((logic) => {
+          if (logic.category === "Events Calendar") {
+            return <ImageGrid key={logic.id} setup={{variant: 'events', images: logic.images }} />;
+          }
+          return null;
+        })}
+        </div>
+        }
+
+        {/* deprecated */}
       {/* This is the testimony section */}
       {/* <TopHanger content={pageData.hangers[2]} /> */}
       {/* {slug === "about-us" && <ImageGrid setup={testimonyGrid} />} */}
+      
+      {/* {slug === "event" && <SuperGrid setup={events_grid3} />}
 
-      {slug === "event" && <SuperGrid setup={events_grid3} />}
-
-      {slug === "event" && <SuperGrid setup={events_grid4} />}
+      {slug === "event" && <SuperGrid setup={events_grid4} />} */}
 
       {slug === "event" && <TopHanger content={pageData.hangers[3]} />}
-      {slug === "event" && <SuperGrid setup={events_grid5} />}
-      {slug === "event" && <SuperGrid setup={events_grid6} />}
+      {/* {slug === "event" && <SuperGrid setup={events_grid5} />}
+      {slug === "event" && <SuperGrid setup={events_grid6} />} */}
+      {slug === "event" &&
+        pseudoEventMdx.map((logic) => {
+          if (logic.category === "University Outreaches") {
+            return <SuperGrid key={logic.id} setup={logic.componentData} />;
+          }
+          return null;
+        })}
 
       <FooterSection />
     </div>

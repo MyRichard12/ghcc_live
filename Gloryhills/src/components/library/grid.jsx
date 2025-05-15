@@ -239,11 +239,11 @@ export const ImageGrid = ({ setup }) => {
       </div>
       )}
       
-    {setup?.variant === "events" && (
-      <div className="w-full grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:px-20 px-4">
-        {setup.images.map((data, index) => {
+    {setup?.variant === "events" && 
+      // <div className="w-full grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:px-20 px-4">
+        setup.images.map((data, index) => {
           return (
-            <div key={index} style={{ backgroundImage: `url(${data.image.childImageSharp.fluid.src})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} className="w-full h-[400px] flex flex-col rounded-xl relative">
+            <div key={index} style={{ backgroundImage: `url(${data?.image?.childImageSharp?.fluid?.src || data.imageData})`, backgroundSize: 'fill', backgroundRepeat: 'no-repeat' }} className="w-full h-[400px] flex flex-col rounded-xl relative">
             {/* the image */}
             <div className="text-black font-bold text-md bg-blue-900 p-3 flex flex-col absolute bottom-0">
             <span className="text-sky-100 text-lg font-semibold">
@@ -262,9 +262,8 @@ export const ImageGrid = ({ setup }) => {
             </div>
           </div>
           )
-        })}          
-      </div>
-      )}
+        })         
+      }
     {setup?.variant === "highlight" && (
       <div className="w-full grid grid-col-1 md:grid-cols-3 gap-10 md:px-20 px-4">
           <div className="w-full flex flex-col">
